@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/school"
+            android:contentDescription="학교 로고"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/search_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:text="검색창"
+            android:onClick="openSearchActivity"
+            android:gravity="center"
+            android:background="@drawable/rounded_border"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:contentDescription="전북대 로고"
+            android:scaleType="centerInside"
+            android:src="@drawable/jbnu" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/noticeButton"
+            android:layout_width="0dp"
+            android:layout_height="326dp"
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:background="@color/blue_1"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold"
+            android:text="공지사항"
+            android:textSize="50dp" />/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="onButton1Clicked"
+                android:textColor="@color/white"
+                android:text="LMS"
+                android:textSize="35dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="onButton2Clicked"
+                android:text="도서관"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/contestButton"
+            android:layout_width="0dp"
+            android:layout_height="327dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@color/blue_2"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="공모전"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/internationalButton"
+            android:layout_width="0dp"
+            android:layout_height="327dp"
+            android:layout_weight="1"
+            android:background="@color/blue_3"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="대외활동"
+            android:textSize="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="onButton3Clicked"
+                android:text="취업\n진로처"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@null"
+                android:background="@color/blue_1"
+                android:onClick="onButton4Clicked"
+                android:text="오아시스"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingVertical="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:paddingVertical="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginEnd="8dp">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onButton5Clicked"
+                    android:text="GPT"
+                    android:textSize="20dp"
+                    android:background="@android:color/white"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onButton6Clicked"
+                    android:text="파파고"
+                    android:textSize="20dp"
+                    android:background="@android:color/white"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="104dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="onButton7Clicked"
+                android:text="전북대\n포털"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="104dp"
+                android:layout_weight="1"
+                android:onClick="onButton8Clicked"
+                android:text="수강\n신청"
+                android:textSize="15dp"
+                android:background="@android:color/white"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000" />
+</LinearLayout>

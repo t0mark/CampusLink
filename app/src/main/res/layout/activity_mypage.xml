@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 상단 구역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- 왼쪽: 텍스트뷰 그룹 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성명"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/schoolclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학과"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/idnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학번"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- 가운데: 데이터 텍스트뷰 그룹 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/name_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="홍길동"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/schoolclass_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="컴퓨터공학과"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/idnumber_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20230001"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:orientation="vertical">
+            <!-- 오른쪽: 이미지 -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="3dp"
+                android:text="로그아웃"
+                android:onClick="logout"
+                android:textSize="20dp" />
+            <TextureView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+            <ImageView
+                android:id="@+id/imageViewTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/mypage"
+                android:background="@drawable/button_background"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="8dp" />
+            <TextureView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 중앙 구역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/BtnSupply"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_background"
+            android:text="- 신청내역 -"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/BtnScrap"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="- 스크랩한 공고 -"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/BtnWrite"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="- 내가 쓴 글 -"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="35dp" />
+    </LinearLayout>
+</LinearLayout>

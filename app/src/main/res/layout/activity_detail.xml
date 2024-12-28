@@ -1,0 +1,253 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 첫 번째 줄: 체크박스 2개와 사이트 이동 버튼 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <CheckBox
+                android:id="@+id/scrapBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="스크랩"
+                android:padding="0dp"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/doneBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신청완료"
+                android:padding="0dp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/siteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="사이트 이동" />
+        </LinearLayout>
+
+        <!-- 두 번째 줄: 제목 -->
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textIsSelectable="true"/>
+
+        <!-- 세 번째 줄: 작성자 / 작성일 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/detailAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="작성자 : "
+                android:textSize="14sp"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/detailDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="작성일 : "
+                android:textSize="14sp"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <!-- 네 번째 줄: 모집인원 / 활동지역 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/detailRecruitment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="모집인원 : "
+                android:textSize="14sp"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/detailLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="활동지역 : "
+                android:textSize="14sp"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <!-- 접수기간 -->
+        <TextView
+            android:id="@+id/detailApplicationPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="접수기간 : "
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textIsSelectable="true" />
+
+        <!-- 활동기간 -->
+        <TextView
+            android:id="@+id/detailActivityPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="활동기간 : "
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textIsSelectable="true" />
+
+        <!-- 이미지 -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <!-- 내용 -->
+        <TextView
+            android:id="@+id/detailContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내용"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:textIsSelectable="true" />
+
+        <!-- 지원 링크 -->
+        <TextView
+            android:id="@+id/detailSupportLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지원 링크 : "
+            android:textColor="#0000FF"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textIsSelectable="true" />
+
+        <!-- 첨부파일 -->
+        <LinearLayout
+            android:id="@+id/detailAttachmentsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <!-- 댓글 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp">
+
+            <EditText
+                android:id="@+id/commentInputField"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="댓글을 입력하세요"
+                android:inputType="text"
+                android:background="@android:drawable/edit_text"
+                android:padding="8dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/commentSubmitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="등록" />
+        </LinearLayout>
+
+        <!-- 댓글 기능 추가 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <!-- 댓글 목록 -->
+            <TextView
+                android:id="@+id/commentsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="댓글"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/commentsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CampusLink" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:windowBackground">@color/sky_blue</item>
+        <item name="colorOnSurface">@color/blue</item>
+        <item name="colorOutline">@color/blue</item>
+    </style>
+
+    <style name="Theme.CampusLink" parent="Base.Theme.CampusLink" />
+</resources>
