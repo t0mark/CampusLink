@@ -6,8 +6,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from settings import CHROME_DRIVER_PATH
 
 def login(type):
-    ID = "202011505"
-    PW = "woong1262!"
+    ID = "ID"
+    PW = "PW"
     time = 5
     if type == "SW1" or type == "SW3":
         login_url = "https://swuniv.jbnu.ac.kr/main/jbnusw?gc=LOGIN"
